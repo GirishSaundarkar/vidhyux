@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
-  const phoneNumber = '919876543210'; // Replace with your WhatsApp number
+  const phoneNumber = '9975520680';
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -35,7 +35,7 @@ export default function WhatsAppButton() {
               </div>
               <div>
                 <h3 className="font-bold text-lg text-gray-900">Contact via WhatsApp</h3>
-                <p className="text-green-600 font-semibold">+91 98765 43210</p>
+                <p className="text-green-600 font-semibold">+91 {`${phoneNumber}`}</p>
               </div>
             </div>
 
@@ -68,18 +68,6 @@ export default function WhatsAppButton() {
                 </div>
               </a>
 
-              <button
-                onClick={scrollToTop}
-                className="group flex items-center space-x-3 p-4 rounded-xl bg-gradient-to-r from-gray-50 to-gray-100 hover:bg-gray-200 transition-all border border-gray-200 hover:shadow-md hover:-translate-y-0.5"
-              >
-                <svg className="w-5 h-5 text-gray-600 group-hover:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-                </svg>
-                <div className="flex-1 min-w-0 text-left">
-                  <p className="font-semibold text-gray-900 group-hover:text-gray-800">Back to Top</p>
-                  <p className="text-sm text-gray-500">Scroll up</p>
-                </div>
-              </button>
             </div>
           </div>
         </div>
