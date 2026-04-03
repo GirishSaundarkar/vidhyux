@@ -10,7 +10,7 @@ const images = [
     alt: 'Wedding Cinematic Video Production'
   },
   {
-    src: 'https://images.unsplash.com/photo-1574680178050-0013432319ba?w=1600&h=900&fit=crop',
+    src: '/photo-1517486808906-6ca8b3f04846.jpeg',
     alt: 'Professional Event Filmmaking'
   },
   {

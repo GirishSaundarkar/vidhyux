@@ -22,7 +22,7 @@ const portfolioItems = [
   },
   {
     title: 'Event Photography',
-    image: '/photo-1511285560929-80b456fea0bc.jpeg',
+    image: '/wedding/DSC09100a.jpg',
     description: 'Multiple faces identified from conference',
     link: '/upload'
   }
@@ -165,7 +165,7 @@ export default function Portfolio() {
 
               <div className="group text-center p-8 rounded-2xl bg-gradient-to-b from-pink-50 to-rose-50 border border-pink-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                 <div className="w-20 h-20 bg-gradient-to-r from-pink-400 to-rose-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl shadow-lg group-hover:scale-110 transition-transform p-3">
-<Clapperboard className="w-12 h-12 text-white" />
+                  <Clapperboard className="w-12 h-12 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Reels Shoot</h3>
                 <p className="text-gray-600 text-sm">Instagram Reels & short-form content</p>
