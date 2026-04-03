@@ -1,0 +1,16 @@
+# Image URLs used in the project\n\n## External Images (Unsplash):\n- 
+https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1600&h=900&fit=crop\n- 
+https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&h=600&fit=crop\n- 
+https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&h=300&fit=crop\n- 
+https://images.unsplash.com/photo-1574680178050-0013432319ba?w=1600&h=900&fit=crop\n- 
+https://images.unsplash.com/photo-1519741497674-611481863552?w=1600&h=900&fit=crop\n- 
+https://images.unsplash.com/photo-1519741497674-611481863552?w=800&fit=crop\n- 
+https://images.unsplash.com/photo-1505455184862-554165e5f6ba?w=1600&h=900&fit=crop\n- 
+https://images.unsplash.com/photo-1505455184862-554165e5f6ba?w=800&fit=crop\n- 
+https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=400&h=300&fit=crop\n- 
+https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=300&fit=crop\n- 
+https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&fit=crop\n- 
+https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&fit=crop\n- 
+https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face\n- 
+https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face\n- 
+https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face\n\n## 
