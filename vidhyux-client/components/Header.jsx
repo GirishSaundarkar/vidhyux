@@ -9,7 +9,7 @@ export default function Header() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Portfolio", path: "/portfolio" },
-    { name: "Book Us", path: "/book-us" },
+    { name: "Contact Us", path: "/book-us" },
   ];
 
   return (

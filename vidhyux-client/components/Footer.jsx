@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import { Share2, Users, Phone } from 'lucide-react';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -11,17 +14,23 @@ export default function Footer() {
               Professional video production that tells your story.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition">📘</a>
-              <a href="#" className="text-gray-400 hover:text-white transition">📷</a>
-              <a href="#" className="text-gray-400 hover:text-white transition">🐦</a>
+              <a href="https://www.facebook.com" className="text-gray-400 hover:text-white transition p-2 rounded" target="_blank" rel="noopener noreferrer">
+                <Share2 size={24} />
+              </a>
+              <a href="https://www.instagram.com" className="text-gray-400 hover:text-white transition p-2 rounded" target="_blank" rel="noopener noreferrer">
+                <Users size={24} />
+              </a>
+              <a href="tel:+15551234567" className="text-gray-400 hover:text-white transition p-2 rounded">
+                <Phone size={24} />
+              </a>
             </div>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="/" className="hover:text-white transition">Home</a></li>
-              <li><a href="/about" className="hover:text-white transition">About</a></li>
-              <li><a href="/book-us" className="hover:text-white transition">Book Us</a></li>
+              <li><Link href="/" className="hover:text-white transition">Home</Link></li>
+              <li><Link href="/about" className="hover:text-white transition">About</Link></li>
+              <li><Link href="/book-us" className="hover:text-white transition">Book Us</Link></li>
             </ul>
           </div>
           <div>
@@ -37,3 +46,4 @@ export default function Footer() {
     </footer>
   );
 }
+
