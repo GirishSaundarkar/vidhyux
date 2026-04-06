@@ -1,4 +1,5 @@
-﻿import Image from 'next/image';
+﻿"use client";
+import Image from 'next/image';
 import { Camera, CameraOff, Video, Film, Clapperboard } from 'lucide-react';
 
 const portfolioItems = [

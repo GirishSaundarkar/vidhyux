@@ -1,10 +1,10 @@
 import "./globals.css";
+import "./globals.css";
 import Header from "@/components/Header";
-import InstagramFeed from "@/components/instagram";
-
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/whatsApp";
-
+import CallNowButton from "@/components/CallNow";
+import InstagramFeed from "@/components/instagram";
 
 export default function RootLayout({ children }) {
   return (
@@ -13,10 +13,10 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        <WhatsAppButton />
+        <CallNowButton />
         <InstagramFeed />
+        <WhatsAppButton />
       </body>
-
     </html>
   );
 }
