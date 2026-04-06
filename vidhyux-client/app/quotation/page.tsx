@@ -196,11 +196,14 @@ const ContractGenerator = () => {
     try {
       const element = document.getElementById("a4-document")!;
       const canvas = await html2canvas(element, {
-        scale: 2,
+        scale: 3,
         useCORS: true,
+        allowTaint: true,
         backgroundColor: "#FDFBF7",
-        ignoreElements: (el) =>
-          el.tagName === "svg" || el.classList.contains("prose"),
+        logging: false,
+        width: 794,
+        height: 1123,
+        ignoreElements: (el) => el.tagName === "svg" || el.classList.contains("prose"),
       });
 
       const imgData = canvas.toDataURL("image/png");
@@ -208,7 +211,10 @@ const ContractGenerator = () => {
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = pdf.internal.pageSize.getHeight();
 
-      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+      const imgProps = pdf.getImageProperties(imgData);
+      const imgWidth = pdf.internal.pageSize.getWidth();
+      const imgHeight = (imgProps.height * imgWidth) / imgProps.width;
+      pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
       pdf.save(`${formData.clientName.replace(/\s+/g, "_")}_Contract.pdf`);
     } catch (error) {
       console.error("Error generating PDF:", error);
