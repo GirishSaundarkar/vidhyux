@@ -1,7 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -194,28 +192,25 @@ const ContractGenerator = () => {
   const downloadPDF = async () => {
     setLoading(true);
     try {
-      const element = document.getElementById("a4-document")!;
-      const canvas = await html2canvas(element, {
-        scale: 3,
-        useCORS: true,
-        allowTaint: true,
-        backgroundColor: "#FDFBF7",
-        logging: false,
-        width: 794,
-        height: 1123,
-        ignoreElements: (el) => el.tagName === "svg" || el.classList.contains("prose"),
+      const response = await fetch('/api/pdf', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
 
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF("p", "mm", "a4");
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = pdf.internal.pageSize.getHeight();
+      if (!response.ok) throw new Error('PDF generation failed');
 
-      const imgProps = pdf.getImageProperties(imgData);
-      const imgWidth = pdf.internal.pageSize.getWidth();
-      const imgHeight = (imgProps.height * imgWidth) / imgProps.width;
-      pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
-      pdf.save(`${formData.clientName.replace(/\s+/g, "_")}_Contract.pdf`);
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+a.download = `${formData.clientName.replace(/\s+/g, '_')}_Contract.pdf`; 
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
     } catch (error) {
       console.error("Error generating PDF:", error);
     } finally {
@@ -424,9 +419,7 @@ const ContractGenerator = () => {
                     size="sm"
                     variant="ghost"
                     className="h-10 w-10 p-0 text-red-600 hover:text-red-700 hover:bg-red-50"
-                  >
-                    <Trash2 className="h-4 w-4" />
-                  </Button>
+                  />
                 </div>
               ))}
             </div>
@@ -760,4 +753,3 @@ const ContractGenerator = () => {
 };
 
 export default ContractGenerator;
-
