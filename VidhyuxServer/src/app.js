@@ -38,7 +38,9 @@ app.use(mongoSanitize());
 app.use(compression());
 
 // enable cors
-app.use(cors());
+app.use(cors({
+  origin: '*',
+}));
 app.options('*', cors());
 
 // jwt authentication
@@ -49,6 +51,11 @@ passport.use('jwt', jwtStrategy);
 if (config.env === 'production') {
   app.use('/v1/auth', authLimiter);
 }
+
+// Health check endpoint for root
+app.get('/', (req, res) => {
+  res.json({ status: 'OK', version: require('../../package.json').version, env: config.env });
+});
 
 // v1 api routes
 app.use('/v1', routes);

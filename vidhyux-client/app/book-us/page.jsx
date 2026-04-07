@@ -37,7 +37,7 @@ export default function BookUs() {
     
     console.log('Formatted Form Data:', submitData);
     
-    const response = await fetch('http://localhost:3000/v1/book-us', {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/book-us`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
