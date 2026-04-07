@@ -5,19 +5,19 @@ import { Camera, CameraOff, Video, Film, Clapperboard } from 'lucide-react';
 const portfolioItems = [
   {
     title: 'Group Photo Analysis',
-    image: '/photo-1511632765486-a01980e01a18.jpeg',
+    image: '/DSC05516.jpg',
     description: 'Identified 4 individuals from corporate event photo',
     link: '/upload'
   },
-  {
-    title: 'Wedding Face ID',
-    image: '/photo-1519741497674-611481863552.jpeg',
-    description: 'Detected bride, groom, and family members',
-    link: '/upload'
-  },
+    {
+      title: 'Wedding Face ID',
+      image: '/saptapadi/DSC05292-1.jpg',
+      description: 'Detected bride, groom, and family members',
+      link: '/upload'
+    },
   {
     title: 'Social Media Ready',
-    image: '/photo-1505455184862-554165e5f6ba.jpeg',
+    image: '/DSC00886.jpg',
     description: 'Quick face detection for influencer content',
     link: '/upload'
   },

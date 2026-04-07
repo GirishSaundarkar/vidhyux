@@ -142,7 +142,7 @@ export async function POST(req: NextRequest) {
     const pdf = await page.pdf({
       format: 'A4',
       printBackground: true,
-      margin: { top: '0mm', right: '10mm', left: '10mm', bottom: '10mm' },
+      margin: 0,
       scale: 0.8
     });
     await browser.close();
