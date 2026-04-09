@@ -20,7 +20,7 @@ export default function Footer() {
               <a href="https://www.instagram.com" className="text-gray-400 hover:text-white transition p-2 rounded" target="_blank" rel="noopener noreferrer">
                 <Users size={24} />
               </a>
-              <a href="tel:+15551234567" className="text-gray-400 hover:text-white transition p-2 rounded">
+              <a href="tel:+91 9876543210" className="text-gray-400 hover:text-white transition p-2 rounded">
                 <Phone size={24} />
               </a>
             </div>
@@ -36,7 +36,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <p className="text-gray-400 mb-2">hello@pbPhotography.com</p>
-            <p className="text-gray-400">+1 (555) 123-4567</p>
+            <p className="text-gray-400">+91 9876543210</p>
           </div>
         </div>
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
