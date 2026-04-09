@@ -37,7 +37,7 @@ export default function WhatsAppButton() {
 
             <div className="grid grid-cols-1 gap-3 pt-4 border-t border-gray-100">
               <a
-                href={`https://wa.me/${phoneNumber}?text=Hi! I'd like to book Vidhyux for my event!`}
+                href={`https://wa.me/${phoneNumber}?text=Hi! I'd like to book PB PhotoGraphy for my event!`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center space-x-3 p-4 rounded-xl bg-gradient-to-r from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 transition-all border border-green-200 hover:shadow-md hover:-translate-y-0.5"

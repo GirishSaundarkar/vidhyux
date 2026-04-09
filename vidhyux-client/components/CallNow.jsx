@@ -29,7 +29,7 @@ className="fixed bottom-6 right-52 z-50 w-16 h-16 bg-blue-500 hover:bg-blue-600 
                 <Phone size={24} className="text-white" />
               </div>
               <div>
-                <h3 className="font-bold text-lg text-gray-900">Call Vidhyux Now</h3>
+                <h3 className="font-bold text-lg text-gray-900">Call pb photography Now</h3>
                 <p className="text-blue-600 font-semibold">+91 {phoneNumber}</p>
               </div>
             </div>
@@ -49,7 +49,7 @@ className="fixed bottom-6 right-52 z-50 w-16 h-16 bg-blue-500 hover:bg-blue-600 
               </a>
 
               <a
-                href={`sms:${phoneNumber}?body=Hi Vidhyux team!`}
+                href={`sms:${phoneNumber}?body=Hi pb photography team, I would like to know more about your team!`}
                 className="group flex items-center space-x-3 p-4 rounded-xl bg-gradient-to-r from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 transition-all border border-green-200 hover:shadow-md hover:-translate-y-0.5"
               >
                 <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">

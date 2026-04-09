@@ -18,7 +18,7 @@
        <div className='absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/40 flex items-center justify-center'>
          <div className='text-center text-white px-6 max-w-4xl mx-auto'>
            <h2 className='text-5xl md:text-7xl lg:text-8xl font-black mb-6 drop-shadow-2xl leading-tight'>
-             VIDHYUX
+             PB PhotoGraphy
            </h2>
            <p className='text-xl md:text-2xl lg:text-3xl opacity-90 drop-shadow-lg mb-8'>
              Cinematic Storytelling

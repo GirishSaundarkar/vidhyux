@@ -23,7 +23,7 @@ const teamMembers = [
 
 
 export const metadata = {
-  title: 'About Vidhyux - Professional Video Production',
+  title: 'About pb Photography - Professional Video Production',
   description: 'Learn about our team and passion for creating stunning videos.',
 };
 
@@ -34,7 +34,7 @@ export default function About() {
       <section className="pt-24 pb-20 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            About Vidhyux
+            About pb Photography
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-12 opacity-90">
             We craft cinematic experiences that captivate and inspire. 
@@ -69,7 +69,7 @@ export default function About() {
                 Our Story
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Founded in 2020, Vidhyux started with a simple mission: 
+                Founded in 2020, PB photography started with a simple mission: 
                 to tell stories that matter. From weddings to corporate 
                 campaigns, we blend technical excellence with artistic passion.
               </p>
@@ -83,7 +83,7 @@ export default function About() {
               </button>
             </div>
             <div className="relative">
-              <Image                src="/photo-1517486808906-6ca8b3f04846.jpeg"                alt="Vidhyux team collaborating in studio"                width={600}                height={400}                className="rounded-2xl shadow-2xl"                priority              />
+              <Image                src="/photo-1517486808906-6ca8b3f04846.jpeg"                alt="pb photography team collaborating in studio"                width={600}                height={400}                className="rounded-2xl shadow-2xl"                priority              />
             </div>
           </div>
         </div>

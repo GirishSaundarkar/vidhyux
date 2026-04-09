@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-black/50 text-white">
       <div className="flex justify-between items-center px-6 py-4">
-        <h1 className="text-xl font-bold">vidhyux</h1>
+        <h1 className="text-xl font-bold">pb Photography</h1>
 
         <nav className="space-x-6">
           {navItems.map((item) => (

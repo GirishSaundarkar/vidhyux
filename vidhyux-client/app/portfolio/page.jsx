@@ -80,7 +80,7 @@ export default function Portfolio() {
             <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 snap-x snap-mandatory">
               <div className="flex-none w-64 h-48 rounded-2xl overflow-hidden shadow-xl snap-center hover:scale-105 transition-transform relative">
                 <Image
-                  src="/photo-1511285560929-80b456fea0bc.jpeg"
+                  src="/engagement/image.png"
                   alt="Haldi Ceremony"
                   fill
                   className="object-cover w-full h-full hover:scale-110 transition-transform duration-500"
@@ -91,7 +91,7 @@ export default function Portfolio() {
               </div>
               <div className="flex-none w-64 h-48 rounded-2xl overflow-hidden shadow-xl snap-center hover:scale-105 transition-transform relative">
                 <Image
-                  src="/photo-1515934751635-c81c6bc9a2d8.jpeg"
+                  src="/engagement/mehendi.png"
                   alt="Mehndi"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -103,7 +103,7 @@ export default function Portfolio() {
               </div>
               <div className="flex-none w-64 h-48 rounded-2xl overflow-hidden shadow-xl snap-center hover:scale-105 transition-transform relative">
                 <Image
-                  src="/photo-1515934751635-c81c6bc9a2d8.jpeg"
+                  src="/engagement/DSC02962.jpg"
                   alt="Shaadi"
                   fill
                   className="object-cover w-full h-full hover:scale-110 transition-transform duration-500"
