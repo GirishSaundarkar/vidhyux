@@ -1,26 +1,13 @@
-# Backend Deployment Fix TODO
+# Add Engagement Photo to Portfolio - Task Tracking
 
 ## Plan Steps:
-- [x] 1. Add root health endpoint to app.js ✅
-- [ ] 2. Commit & push changes to repo linked to Render
-  - `git add VidhyuxServer/src/app.js`
-  - `git commit -m "Add root health endpoint for Render"`
-  - `git push origin main` (or your branch)
-- [ ] 3. Test https://vidhyux.onrender.com/ → {status: 'OK', ...}
-- [ ] 4. Add Render Environment Variables (Dashboard > Environment):
-  | Key | Value Example |
-  |-----|---------------|
-  | NODE_ENV | production |
-  | MONGODB_URL | mongodb+srv://... (Atlas URI) |
-  | JWT_SECRET | supersecretkey32charslong!!! |
-  | SMTP_HOST | smtp.gmail.com |
-  | SMTP_PORT | 587 |
-  | SMTP_USERNAME | your@gmail.com |
-  | SMTP_PASSWORD | app-password |
-  | EMAIL_FROM | noreply@vidhyux.com |
-- [ ] 5. Redeploy on Render, test https://vidhyux.onrender.com/v1/docs
-- [ ] 6. MongoDB Atlas: Network Access > Add IP `0.0.0.0/0`
-- [ ] Done ✅
+- [x] 1. Create TODO.md for tracking ✅
+- [x] 2. Edit vidhyux-client/app/portfolio/page.jsx to add 5th Engagement photo item using /engagement/DSC09411.jpg ✅
+- [x] 3. Update TODO.md to mark complete and cleanup ✅
+- [x] 4. Preview changes with dev server (run: cd vidhyux-client && npm run dev) ✅
+- [x] Done ✅
 
-Track progress & share Render logs after step 3.
+## Task Complete
+Added 5th "Engagement" step with DSC09411.jpg in Complete Wedding Planning carousel.
+Navigate to /portfolio to view. Scroll horizontally to see all 5 steps.
 

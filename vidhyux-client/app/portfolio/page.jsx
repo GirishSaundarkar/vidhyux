@@ -123,6 +123,17 @@ export default function Portfolio() {
                   4. Reception
                 </div>
               </div>
+              <div className="flex-none w-64 h-48 rounded-2xl overflow-hidden shadow-xl snap-center hover:scale-105 transition-transform relative">
+                <Image
+                  src="/engagement/DSC09411.jpg"
+                  alt="Engagement Ceremony"
+                  fill
+                  className="object-cover w-full h-full hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute bottom-2 left-4 bg-gradient-to-r from-pink-400 to-rose-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  5. Engagement
+                </div>
+              </div>
             </div>
           </div>
 
