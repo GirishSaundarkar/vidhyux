@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">vidhyux</h3>
+            <h3 className="text-2xl font-bold mb-4">pbPhotography</h3>
             <p className="text-gray-400 mb-4">
               Professional video production that tells your story.
             </p>
@@ -20,7 +20,7 @@ export default function Footer() {
               <a href="https://www.instagram.com" className="text-gray-400 hover:text-white transition p-2 rounded" target="_blank" rel="noopener noreferrer">
                 <Users size={24} />
               </a>
-              <a href="tel:+15551234567" className="text-gray-400 hover:text-white transition p-2 rounded">
+              <a href="tel:+91 9876543210" className="text-gray-400 hover:text-white transition p-2 rounded">
                 <Phone size={24} />
               </a>
             </div>
@@ -35,12 +35,12 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
-            <p className="text-gray-400 mb-2">hello@vidhyux.com</p>
-            <p className="text-gray-400">+1 (555) 123-4567</p>
+            <p className="text-gray-400 mb-2">hello@pbPhotography.com</p>
+            <p className="text-gray-400">+91 9876543210</p>
           </div>
         </div>
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {currentYear} Vidhyux. All rights reserved.</p>
+          <p>&copy; {currentYear} PB-Photography. All rights reserved.</p>
         </div>
       </div>
     </footer>

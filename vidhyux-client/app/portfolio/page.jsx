@@ -1,22 +1,23 @@
-﻿import Image from 'next/image';
+﻿"use client";
+import Image from 'next/image';
 import { Camera, CameraOff, Video, Film, Clapperboard } from 'lucide-react';
 
 const portfolioItems = [
   {
     title: 'Group Photo Analysis',
-    image: '/photo-1511632765486-a01980e01a18.jpeg',
+    image: '/DSC05516.jpg',
     description: 'Identified 4 individuals from corporate event photo',
     link: '/upload'
   },
-  {
-    title: 'Wedding Face ID',
-    image: '/photo-1519741497674-611481863552.jpeg',
-    description: 'Detected bride, groom, and family members',
-    link: '/upload'
-  },
+    {
+      title: 'Wedding Face ID',
+      image: '/saptapadi/DSC05292-1.jpg',
+      description: 'Detected bride, groom, and family members',
+      link: '/upload'
+    },
   {
     title: 'Social Media Ready',
-    image: '/photo-1505455184862-554165e5f6ba.jpeg',
+    image: '/DSC00886.jpg',
     description: 'Quick face detection for influencer content',
     link: '/upload'
   },
@@ -79,7 +80,7 @@ export default function Portfolio() {
             <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 snap-x snap-mandatory">
               <div className="flex-none w-64 h-48 rounded-2xl overflow-hidden shadow-xl snap-center hover:scale-105 transition-transform relative">
                 <Image
-                  src="/photo-1511285560929-80b456fea0bc.jpeg"
+                  src="/engagement/image.png"
                   alt="Haldi Ceremony"
                   fill
                   className="object-cover w-full h-full hover:scale-110 transition-transform duration-500"
@@ -90,7 +91,7 @@ export default function Portfolio() {
               </div>
               <div className="flex-none w-64 h-48 rounded-2xl overflow-hidden shadow-xl snap-center hover:scale-105 transition-transform relative">
                 <Image
-                  src="/photo-1515934751635-c81c6bc9a2d8.jpeg"
+                  src="/engagement/mehendi.png"
                   alt="Mehndi"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -102,7 +103,7 @@ export default function Portfolio() {
               </div>
               <div className="flex-none w-64 h-48 rounded-2xl overflow-hidden shadow-xl snap-center hover:scale-105 transition-transform relative">
                 <Image
-                  src="/photo-1515934751635-c81c6bc9a2d8.jpeg"
+                  src="/engagement/DSC02962.jpg"
                   alt="Shaadi"
                   fill
                   className="object-cover w-full h-full hover:scale-110 transition-transform duration-500"
@@ -120,6 +121,17 @@ export default function Portfolio() {
                 />
                 <div className="absolute bottom-2 left-4 bg-gradient-to-r from-purple-400 to-indigo-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                   4. Reception
+                </div>
+              </div>
+              <div className="flex-none w-64 h-48 rounded-2xl overflow-hidden shadow-xl snap-center hover:scale-105 transition-transform relative">
+                <Image
+                  src="/engagement/DSC09411.jpg"
+                  alt="Engagement Ceremony"
+                  fill
+                  className="object-cover w-full h-full hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute bottom-2 left-4 bg-gradient-to-r from-pink-400 to-rose-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  5. Engagement
                 </div>
               </div>
             </div>

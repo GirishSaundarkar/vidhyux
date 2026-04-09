@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export default function InstagramButton() {
   const [isOpen, setIsOpen] = useState(false);
-  const instagramUrl = 'https://www.instagram.com/vidhyux/';
+  const instagramUrl = 'https://www.instagram.com/pb_photography/';
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -30,7 +30,7 @@ export default function InstagramButton() {
               </div>
               <div>
                 <h3 className='font-bold text-lg text-gray-900'>Follow on Instagram</h3>
-                <p className='text-pink-600 font-semibold'>@vidhyux</p>
+                <p className='text-pink-600 font-semibold'>@Pb_Photography</p>
               </div>
             </div>
 
